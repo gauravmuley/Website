@@ -1,0 +1,81 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+background-image: url(bg-2.jpg);
+background-size: cover;
+background-position: center;
+color: ivory;
+
+font-family: sans-serif;
+}
+.Menubar
+{
+    background:gray;
+    text-align: center;
+}
+.Menubar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.Menubar ul li 
+{
+    width: 100px;
+    margin: 15px;
+    padding: 5px;
+}
+.Menubar ul li  a
+{
+    text-decoration: none;
+    color: #000;
+}
+.active,.Menubar ul li:hover
+{
+background: ivory;
+border-radius: 3px;
+}
+.Menubar .fa
+{
+    margin-right: 8px;
+}
+.Subone
+{
+    display: none;
+}
+.Menubar ul li:hover .Subone
+{
+    display: block;
+    position: absolute;
+    background: ivory;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.Menubar ul li:hover .Subone ul 
+{
+    display: block;
+    margin: 10px;
+}
+.Menubar ul li:hover .Subone ul li
+ {
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted #000;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+.Menubar ul li:hover .Subone ul li:last-child
+{
+    border-bottom:none;
+}
+.Menubar ul li:hover .Subone ul li a:hover
+{
+    color: grey;
+}
